@@ -7,5 +7,6 @@ int main()
 {
     Game* theGame = new Game();
     theGame->playGame();
+    delete theGame;
     return 0;
 }

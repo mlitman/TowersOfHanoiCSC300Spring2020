@@ -16,6 +16,12 @@ Game::Game()
     this->theTowers[1] = this->t2;
     this->theTowers[2] = this->t3;
 }
+Game::~Game()
+{
+    delete this->t1;
+    delete this->t2;
+    delete this->t3;
+}
 
 void Game::playGame()
 {
